@@ -12,8 +12,9 @@
 
 <body>
     <div class="container" ng-controller='mainCtrl'>
-        <div custom-nav-bar></div>
-        <div ng-include="contentTemplate"></div>
+        <div custom-nav-bar nav-items="tabs"></div>
+        <div ng-include="'app/register/register.tpl.html'"></div>
+
 
     </div>
     <!--login Start-->
@@ -38,6 +39,9 @@
     <script src="app/components/customNavBar.js"></script>
     <script src="app/components/customLogo.js"></script>
     <script src="app/components/numberOnly.js"></script>
+    <script src="app/components/customClick.js"></script>
+    <script src="app/components/userSvc.js"></script>
+    <script src="app/components/checkuser.js"></script>
 </body>
 
 </html>

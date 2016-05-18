@@ -1,6 +1,6 @@
 //
 var mainCtrlFn = function ($scope, navbarService) {
-    $scope.brandName = 'CGI';
+    $scope.title = 'CGI';
     /* $scope.loadContent=function(contentTye){
        if(contentTye=='login')
          {

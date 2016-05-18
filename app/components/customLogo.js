@@ -2,11 +2,15 @@ function customLogo() {
 
     return {
         restrict: "A,E,C",
-
+       
         //A Stands of attribute
-        //E stands for Element
+ //E stands for Element
         //C stands for class
-        template: '<a href="#" class="navbar-brand">bbbbb</a>'
+        
+         scope:{
+             brandName:"@"//read only from controller
+         },
+        template: '<a href="#" class="navbar-brand">{{brandName}}</a>'
 
     };
 }
