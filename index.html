@@ -12,7 +12,7 @@
 
 <body>
     <div class="container" ng-controller='mainCtrl'>
-        <div ng-include="'app/navbar/navbar.tpl.html'"></div>
+        <div custom-nav-bar></div>
         <div ng-include="contentTemplate"></div>
 
     </div>
@@ -21,6 +21,7 @@
     <!--login end-->
     <!--register Start-->
     <script src="app/register/register.js"></script>
+    <script src="app/register/registerCtrl.js"></script>
     <!--register end-->
     <!--vehicles Start-->
     <script src="app/vehicles/vehicles.js">
@@ -34,7 +35,9 @@
     <script src="app/app.js"></script>
     <script src="app/navbar/navbarService.js"></script>
     <script src="app/navbar/mainCtrl.js"></script>
+    <script src="app/components/customNavBar.js"></script>
     <script src="app/components/customLogo.js"></script>
+    <script src="app/components/numberOnly.js"></script>
 </body>
 
 </html>
